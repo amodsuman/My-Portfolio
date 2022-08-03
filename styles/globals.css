@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Color Variables */
+:root {
+    --primary-color: #6a59d1;
+    --secondary-color: #0e2431;
+    --tertary-color: #777;
+    --form-color: #e5e7eb;
+    --hover-color: #4f40a3;
+    --border-color: #e5e7eb;
+    --bg-color: #fefefe;
+    --bg-color2: #0000001a;
+    --bg-color3: #ffffff;
+}
+
+
+
+/* Customizing Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background: #c5cadf;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background: #6a59d1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3e2cb3;
+}
+
+.popup-scrollbar::-webkit-scrollbar,
+.portfolio-popup-body::-webkit-scrollbar,
+.service-popup-body::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Section */
+.section {
+    @apply relative mx-auto w-full max-w-7xl px-8 sm:px-5 xsm:px-3 pt-32 lg:pt-24 md:pt-20 sm:pt-16;
+}
+
+
+
+/* Title */
+.title1 {
+    @apply mb-8 text-7xl font-extrabold text-transparent bg-gradient-to-t from-transparent to-primary-color bg-clip-text opacity-10 sm:text-[56px] xsm:text-[40px] xxsm:text-[34px];
+}
+
+@layer utilities {
+    .title2 {
+        @apply -translate-y-20 text-[50px] font-bold before:absolute before:right-0 before:bottom-0 before:h-1 before:w-20 before:bg-primary-color sm:text-[40px] xsm:text-3xl xsm:-translate-y-14 xxsm:text-2xl sm:-translate-y-[70px];
+    }
+}
+
+
+
+/* Button */
+.button {
+    @apply inline-block border-2 border-primary-color rounded-md bg-primary-color lg:py-3 lg:px-5 py-5 px-8 text-base xsm:text-sm xxsm:text-xs font-medium tracking-wider text-white duration-300 ease-in-out hover:bg-transparent hover:text-primary-color;
+}
+
+
+
+/* Navbar */
+.nav-item {
+    @apply text-base font-medium text-secondary-color hover:text-hover-color duration-300 ease-in-out md:mx-12 md:my-4 xsm:my-3;
+}
+
+
+
+/* Banner */
+.select-color {
+    @apply w-8 h-8 rounded-full cursor-pointer border-2;
+}
+
+
+
+/* Qualification */
+.qualification-card {
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.qualification-tab-title {
+    @apply text-[32px] font-semibold cursor-pointer hover:text-hover-color md:text-2xl sm:text-lg xxsm:text-sm;
+}
+
+.qualification-tab-icon {
+    @apply text-[28px] mr-5 md:text-2xl xsm:text-lg xsm:mr-2 xxsm:text-base xxsm:mr-1;
+}
+
+.qualification-card {
+    @apply grid gap-16 md:gap-10 sm:gap-2;
+}
+
+.qualification-card-h3 {
+    @apply text-[28px] font-semibold sm:text-xl xxsm:text-lg;
+}
+
+.qualification-card-span {
+    @apply inline-block w-full font-bold text-lg text-primary-color sm:text-base xxsm:text-sm;
+}
+
+.qualification-card-span1 {
+    @apply inline-block w-full font-bold text-sm sm:text-xs xxsm:text-[10px];
+}
+
+.qualification-card-date {
+    @apply relative text-xs text-tertary-color sm:text-[10px];
+}
+
+.qualification-card-span2 {
+    @apply inline-block h-4 w-4 rounded-full bg-primary-color xsm:h-3 xsm:w-3;
+}
+
+.qualification-card-span3 {
+    @apply block h-full w-[2px] translate-x-[7px] -translate-y-[7px] bg-primary-color xsm:translate-x-[5px];
+}
+
+
+
+/* Skills */
+.outer {
+    @apply relative flex-shrink-0 rounded-full p-2 w-full max-w-[120px] xl:max-w-[100px] lg:max-w-[80px] lg:p-[6px] xsm:p-1 xsm:max-w-[60px];
+}
+
+.inner {
+    @apply relative w-full pt-[100%];
+}
+
+.innermost {
+    @apply absolute p-8 top-0 left-0 right-0 bottom-0 flex items-center justify-center rounded-full overflow-hidden bg-bg-color xl:p-6 lg:p-4 xsm:p-3;
+}
+
+.inner-icon {
+    @apply w-full;
+}
+
+
+
+/* Services */
+.service {
+    @apply w-full;
+}
+
+.service-card {
+    @apply bg-bg-color3 shadow-3xl border-b-4 border-primary-color p-12 rounded-md hover:border-hover-color xl:p-10 lg:p-4 md:p-8;
+}
+
+.service-card-i {
+    @apply text-primary-color text-5xl mb-8 lg:text-3xl md:text-5xl;
+}
+
+.service-card-h3 {
+    @apply text-2xl font-bold leading-8 mb-5 xl:text-xl lg:text-lg md:text-xl;
+}
+
+.service-card-learnmore {
+    @apply text-tertary-color cursor-pointer font-medium hover:text-hover-color xl:text-sm lg:text-xs md:text-sm;
+}
+
+.service-card-learnmore-i {
+    @apply ml-4 ease-in-out duration-300 group-hover:translate-x-2;
+}
+
+.service-popup {
+    @apply flex p-5 justify-center items-center z-[999999999] fixed w-full h-screen top-0 left-0 bg-bg-color2 backdrop-blur-md ease-in-out duration-300;
+}
+
+.service-popup-body {
+    @apply relative mhs:h-full mhs:overflow-y-auto shadow-3xl bg-bg-color3 w-full max-w-2xl p-10 h-min rounded-xl sm:p-4 xxsm:p-3;
+}
+
+.service-popup-body-i {
+    @apply fixed top-0 right-0 m-2 flex items-center justify-center rounded-full cursor-pointer ease-in-out duration-300 bg-bg-color3 shadow-3xl w-10 h-10 hover:text-red-600;
+}
+
+.service-popup-body-h3 {
+    @apply text-[32px] font-bold text-primary-color sm:text-[28px];
+}
+
+.service-popup-body-h4 {
+    @apply text-xl font-semibold mt-5 mx-0 mb-3 sm:text-lg sm:mt-4 sm:mb-2;
+}
+
+.service-popup-body-p {
+    @apply text-base sm:text-sm text-justify;
+}
+
+.service-popup-body-ul-li {
+    @apply mt-4 text-base sm:text-sm sm:mt-3;
+}
+
+.service-popup-body-ul-li-i {
+    @apply mr-4 text-primary-color sm:text-sm xsm:mr-2;
+}
+
+
+
+/* Portfolio */
+.card {
+    @apply relative w-full h-96 shadow-3xl rounded-xl overflow-hidden cursor-pointer lg:h-72 md:h-60;
+}
+
+.card-overlay {
+    @apply ease-in-out duration-1000 group-hover:absolute group-hover:z-[777] group-hover:h-full group-hover:w-full group-hover:bg-[#00000080];
+}
+
+.card-info {
+    @apply z-[777] absolute bottom-0 left-0 m-5 text-white translate-y-5 opacity-0 duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100;
+}
+
+.card-info-h3 {
+    @apply text-2xl font-semibold sm:text-xl xxsm:text-lg;
+}
+
+.card-info-span {
+    @apply text-xl sm:text-lg xxsm:text-sm;
+}
+
+.card-img {
+    @apply w-full h-full object-cover;
+}
+
+.portfolio-popup {
+    @apply flex p-5 justify-center items-center z-[999999999] fixed w-full h-screen top-0 left-0 bg-bg-color2 backdrop-blur-md ease-in-out duration-300;
+}
+
+.portfolio-popup-body {
+    @apply relative mhp:h-full mhp:overflow-y-auto shadow-3xl bg-bg-color3 w-full max-w-2xl p-10 h-min rounded-xl sm:p-4 xxsm:p-3;
+}
+
+.portfolio-popup-body-icon {
+    @apply fixed top-0 right-0 m-2 flex items-center justify-center rounded-full cursor-pointer ease-in-out duration-300 bg-bg-color3 shadow-3xl w-10 h-10 hover:text-red-600;
+}
+
+.portfolio-popup-body-h3 {
+    @apply text-[32px] font-semibold text-primary-color sm:text-[28px];
+}
+
+.portfolio-popup-body-img {
+    @apply w-full my-5 mx-0 rounded-xl sm:my-4;
+}
+
+.portfolio-popup-body-p {
+    @apply text-base sm:text-sm text-justify;
+}
+
+
+
+/* Testimonials */
+.background-testimonials {
+    background: linear-gradient(to bottom, transparent 10%, var(--primary-color) 50%, var(--primary-color) 90%, transparent 10%), linear-gradient(to top, transparent 10%, var(--primary-color) 50%, var(--primary-color) 90%, transparent 10%);
+}
+
+@media screen and (max-width: 1279px) {
+    .background-testimonials {
+        background: linear-gradient(to bottom, transparent 20%, var(--primary-color) 40%, var(--primary-color) 80%, transparent 20%), linear-gradient(to top, transparent 20%, var(--primary-color) 40%, var(--primary-color) 80%, transparent 20%);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .background-testimonials {
+        background: linear-gradient(to bottom, transparent 10%, var(--primary-color) 50%, var(--primary-color) 90%, transparent 10%), linear-gradient(to top, transparent 10%, var(--primary-color) 50%, var(--primary-color) 90%, transparent 10%);
+    }
+}
+
+
+
+/* Contact */
+.item {
+    @apply mb-10 lg:mb-6 xsm:mb-3;
+}
+
+.item-h3 {
+    @apply text-2xl leading-[24px] font-semibold mb-3 lg:text-xl lg:mb-1 xsm:text-lg xsm:mb-0;
+}
+
+.item-icon {
+    @apply mr-4 text-primary-color text-xl lg:text-lg xsm:text-base;
+}
+
+.item-span {
+    @apply text-tertary-color text-base lg:text-sm xsm:text-xs;
+}
