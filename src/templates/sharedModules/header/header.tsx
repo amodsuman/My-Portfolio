@@ -39,29 +39,29 @@ const Header = () => {
   const darkMode = () => {
     setMode(true);
     var root = document.querySelector<HTMLElement>(":root");
-    root!.style.setProperty('--primary-color', '#fa5b0f');
-    root!.style.setProperty('--secondary-color', '#c5c4c9');
-    root!.style.setProperty('--tertary-color', '#b8b8b8');
-    root!.style.setProperty('--form-color', '#222222');
-    root!.style.setProperty('--hover-color', '#ffffff');
-    root!.style.setProperty('--border-color', '#969696');
-    root!.style.setProperty('--bg-color', '#000000');
-    root!.style.setProperty('--bg-color2', '#0000001a');
-    root!.style.setProperty('--bg-color3', '#222222');
+    root!.style.setProperty("--primary-color", "#fa5b0f");
+    root!.style.setProperty("--secondary-color", "#c5c4c9");
+    root!.style.setProperty("--tertary-color", "#b8b8b8");
+    root!.style.setProperty("--form-color", "#222222");
+    root!.style.setProperty("--hover-color", "#ffffff");
+    root!.style.setProperty("--border-color", "#969696");
+    root!.style.setProperty("--bg-color", "#000000");
+    root!.style.setProperty("--bg-color2", "#0000001a");
+    root!.style.setProperty("--bg-color3", "#222222");
   };
 
   const lightMode = () => {
     setMode(false);
     var root = document.querySelector<HTMLElement>(":root");
-    root!.style.setProperty('--primary-color', '#6a59d1');
-    root!.style.setProperty('--secondary-color', '#0e2431');
-    root!.style.setProperty('--tertary-color', '#777');
-    root!.style.setProperty('--form-color', '#e5e7eb');
-    root!.style.setProperty('--hover-color', '#4f40a3');
-    root!.style.setProperty('--border-color', '#e5e7eb');
-    root!.style.setProperty('--bg-color', '#fefefe');
-    root!.style.setProperty('--bg-color2', '#0000001a');
-    root!.style.setProperty('--bg-color3', '#ffffff');
+    root!.style.setProperty("--primary-color", "#6a59d1");
+    root!.style.setProperty("--secondary-color", "#0e2431");
+    root!.style.setProperty("--tertary-color", "#777");
+    root!.style.setProperty("--form-color", "#e5e7eb");
+    root!.style.setProperty("--hover-color", "#4f40a3");
+    root!.style.setProperty("--border-color", "#e5e7eb");
+    root!.style.setProperty("--bg-color", "#fefefe");
+    root!.style.setProperty("--bg-color2", "#0000001a");
+    root!.style.setProperty("--bg-color3", "#ffffff");
   };
 
   // UseEffect
@@ -149,8 +149,9 @@ const Header = () => {
           </div>
           <div>
             <a
-              href="#"
-              className="ml-10 block rounded-md bg-primary-color px-5 py-[8px] text-base font-medium border-2 hover:text-primary-color border-primary-color text-white ease-in-out duration-300 hover:bg-transparent md:hidden"
+              href="/files/Amod's-Resume.pdf"
+              download="/files/Amod's-Resume.pdf"
+              className="ml-10 block cursor-pointer rounded-md border-2 border-primary-color bg-primary-color px-5 py-[8px] text-base font-medium text-white duration-300 ease-in-out hover:bg-transparent hover:text-primary-color md:hidden"
             >
               CV<i className="fas fa-download ml-3 text-sm"></i>
             </a>
@@ -159,16 +160,20 @@ const Header = () => {
                 onClick={openHam}
                 className="fas fa-ellipsis-vertical z-[99999999] hidden cursor-pointer border-r-[1px] pr-4 text-xl duration-300 ease-in-out hover:text-hover-color md:block"
               ></i>
-              <div className={`md:block md:opacity-100 ease duration-300 ${showUp ? "opacity-0" : "opacity-100"}`}>
+              <div
+                className={`ease duration-300 md:block md:opacity-100 ${
+                  showUp ? "opacity-0" : "opacity-100"
+                }`}
+              >
                 <i
                   onClick={lightMode}
-                  className={`fa-regular fa-sun z-[99999999] cursor-pointer md:pl-4 md:relative absolute right-0 top-40 py-2 px-3 rounded-l shadow-3xl md:top-0 md:right-0 md:p-0 md:text-secondary-color text-white md:h-0 bg-primary-color hover:bg-transparent md:border-none border-l-2 border-t-2 border-b-2 border-primary-color md:hover:text-hover-color hover:text-primary-color text-xl duration-300 ease-in-out ${
+                  className={`fa-regular fa-sun absolute right-0 top-40 z-[99999999] cursor-pointer rounded-l border-l-2 border-t-2 border-b-2 border-primary-color bg-primary-color py-2 px-3 text-xl text-white shadow-3xl duration-300 ease-in-out hover:bg-transparent hover:text-primary-color md:relative md:top-0 md:right-0 md:h-0 md:border-none md:p-0 md:pl-4 md:text-secondary-color md:hover:text-hover-color ${
                     mode ? "block" : "hidden"
                   }`}
                 ></i>
                 <i
                   onClick={darkMode}
-                  className={`fa-regular fa-moon z-[99999999] cursor-pointer md:pl-4 md:relative absolute right-0 top-40 py-2 px-3 rounded-l shadow-3xl md:top-0 md:right-0 md:p-0 md:text-secondary-color text-white md:h-0 bg-primary-color hover:bg-transparent md:border-none border-l-2 border-t-2 border-b-2 border-primary-color md:hover:text-hover-color hover:text-primary-color text-xl duration-300 ease-in-out ${
+                  className={`fa-regular fa-moon absolute right-0 top-40 z-[99999999] cursor-pointer rounded-l border-l-2 border-t-2 border-b-2 border-primary-color bg-primary-color py-2 px-3 text-xl text-white shadow-3xl duration-300 ease-in-out hover:bg-transparent hover:text-primary-color md:relative md:top-0 md:right-0 md:h-0 md:border-none md:p-0 md:pl-4 md:text-secondary-color md:hover:text-hover-color ${
                     mode ? "hidden" : "block"
                   }`}
                 ></i>
@@ -178,7 +183,7 @@ const Header = () => {
         </div>
       </header>
       <a
-        className={`fixed right-5 bottom-20 md:bottom-14 sm:bottom-10  z-[99999] flex h-10 w-10 xsm:w-8 xsm:h-8 cursor-pointer items-center justify-center rounded bg-primary-color text-lg text-white hover:text-primary-color shadow-3xl duration-300 ease-in-out border-2 border-primary-color hover:bg-transparent ${
+        className={`fixed right-5 bottom-20 z-[99999] flex  h-10 w-10 cursor-pointer items-center justify-center rounded border-2 border-primary-color bg-primary-color text-lg text-white shadow-3xl duration-300 ease-in-out hover:bg-transparent hover:text-primary-color md:bottom-14 sm:bottom-10 xsm:h-8 xsm:w-8 ${
           showUp ? "opacity-100" : "opacity-0"
         }`}
         href="#home"

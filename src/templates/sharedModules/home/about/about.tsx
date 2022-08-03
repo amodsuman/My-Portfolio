@@ -69,7 +69,11 @@ export const About = () => {
               </span>
             </li>
           </ul>
-          <a href="#" className="button mt-6 xl:mt-3 md:mt-8 xsm:mt-6">
+          <a
+            href="/files/Amod's-Resume.pdf"
+            download="/files/Amod's-Resume.pdf"
+            className="button mt-6 xl:mt-3 md:mt-8 xsm:mt-6"
+          >
             Download CV<i className="fas fa-download ml-4"></i>
           </a>
         </div>

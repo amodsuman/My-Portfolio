@@ -15,24 +15,28 @@ export const Banner = () => {
             <a
               href="https://www.facebook.com/fb.amodsuman"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
+              target="_blank"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
               href="https://www.instagram.com/ig.amodsuman/"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
+              target="_blank"
             >
               <i className="fab fa-instagram"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/amod-suman-29377a161/"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
+              target="_blank"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
               href="https://github.com/amodsuman"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
+              target="_blank"
             >
               <i className="fab fa-github"></i>
             </a>

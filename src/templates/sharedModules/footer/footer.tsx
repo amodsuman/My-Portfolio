@@ -17,24 +17,28 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/fb.amodsuman"
             className="text-3xl text-primary-color hover:text-hover-color ease-in-out duration-300 sm:text-2xl xsm:text-3xl xxsm:text-2xl"
+              target="_blank"
           >
             <i className="fab fa-square-facebook"></i>
           </a>
           <a
             href="https://www.instagram.com/ig.amodsuman/"
             className="text-3xl text-primary-color hover:text-hover-color ease-in-out duration-300 sm:text-2xl xsm:text-3xl xxsm:text-2xl"
+              target="_blank"
           >
             <i className="fab fa-instagram-square"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/amod-suman-29377a161/"
             className="text-3xl text-primary-color hover:text-hover-color ease-in-out duration-300 sm:text-2xl xsm:text-3xl xxsm:text-2xl"
+              target="_blank"
           >
             <i className="fab fa-linkedin"></i>
           </a>
           <a
             href="https://github.com/amodsuman"
             className="text-3xl text-primary-color hover:text-hover-color ease-in-out duration-300 sm:text-2xl xsm:text-3xl xxsm:text-2xl"
+              target="_blank"
           >
             <i className="fab fa-square-github"></i>
           </a>
