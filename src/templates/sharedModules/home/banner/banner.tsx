@@ -16,6 +16,7 @@ export const Banner = () => {
               href="https://www.facebook.com/fb.amodsuman"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
@@ -23,6 +24,7 @@ export const Banner = () => {
               href="https://www.instagram.com/ig.amodsuman/"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-instagram"></i>
             </a>
@@ -30,6 +32,7 @@ export const Banner = () => {
               href="https://www.linkedin.com/in/amod-suman-29377a161/"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
@@ -37,6 +40,7 @@ export const Banner = () => {
               href="https://github.com/amodsuman"
               className="my-3 mx-0 text-2xl text-primary-color duration-300 ease-in-out hover:text-hover-color"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-github"></i>
             </a>
