@@ -50,19 +50,19 @@ html {
 
 /* Section */
 .section {
-    @apply relative mx-auto w-full max-w-7xl px-8 sm:px-5 xsm:px-3 pt-32 lg:pt-24 md:pt-20 sm:pt-16;
+    @apply overflow-hidden relative mx-auto w-full max-w-7xl px-8 sm:px-5 xsm:px-3 pt-32 lg:pt-24 md:pt-20 sm:pt-16;
 }
 
 
 
 /* Title */
 .title1 {
-    @apply mb-8 text-7xl font-extrabold text-transparent bg-gradient-to-t from-transparent to-primary-color bg-clip-text opacity-10 sm:text-[56px] xsm:text-[40px] xxsm:text-[34px];
+    @apply -mb-12 sm:-mb-10 xsm:-mb-6 text-7xl font-extrabold text-transparent bg-gradient-to-t from-transparent to-primary-color bg-clip-text opacity-20 sm:text-[56px] xsm:text-[40px] xxsm:text-[34px];
 }
 
 @layer utilities {
     .title2 {
-        @apply -translate-y-20 text-[50px] font-bold before:absolute before:right-0 before:bottom-0 before:h-1 before:w-20 before:bg-primary-color sm:text-[40px] xsm:text-3xl xsm:-translate-y-14 xxsm:text-2xl sm:-translate-y-[70px];
+        @apply relative text-[50px] font-bold before:absolute before:right-0 before:bottom-0 before:h-1 before:w-20 before:bg-primary-color sm:text-[40px] xsm:text-3xl xxsm:text-2xl;
     }
 }
 

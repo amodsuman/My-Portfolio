@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const Qualification = () => {
   const [show, setShow] = useState(true);
@@ -9,17 +10,31 @@ export const Qualification = () => {
     setShow(false);
   };
   return (
-    <section
-      className="section"
-      id="qualification"
-    >
-      <div className="relative flex flex-col items-center justify-center md:-mb-5 xxsm:-mb-8">
-        <h1 className="title1">Qualification</h1>
-        <h2 className="title2">Qualification</h2>
+    <section className="section" id="qualification">
+      <div className="mb-20 flex flex-col items-center justify-center lg:mb-14 md:mb-12 sm:mb-10 xsm:mb-8 xxsm:mb-6">
+        <motion.h1
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 0.2, x: 0 }}
+          transition={{ ease: "easeIn", duration: 0.5 }}
+          className="title1"
+        >
+          Qualification
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeIn", duration: 0.5 }}
+          className="title2"
+        >
+          Qualification
+        </motion.h2>
       </div>
       <div className="w-full">
         <div className="mb-12 grid grid-cols-2 xl:mb-10 sm:mb-8 xxsm:mb-4">
-          <div
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
             className={`qualification-tab-title text-${
               show ? "primary-color" : "secondary-color"
             } mr-10 justify-self-end xsm:mr-5`}
@@ -27,16 +42,19 @@ export const Qualification = () => {
           >
             <i className="qualification-tab-icon fas fa-graduation-cap"></i>
             Education
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
             className={`qualification-tab-title text-${
               show ? "secondary-color" : "primary-color"
-            } ml-10 xsm:ml-5`}
+            } ml-10 justify-self-start xsm:ml-5`}
             onClick={expTab}
           >
             <i className="qualification-tab-icon fas fa-briefcase"></i>
             Experience
-          </div>
+          </motion.div>
         </div>
         <div>
           {/* Education */}
@@ -44,7 +62,12 @@ export const Qualification = () => {
             <div className="qualification_content">
               {/* 1 */}
               <div className="qualification-card">
-                <div className="justify-self-end">
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                  className="justify-self-end"
+                >
                   <h3 className="qualification-card-h3 text-right">School</h3>
                   <span className="qualification-card-span1 text-right">
                     (SLC)
@@ -56,7 +79,7 @@ export const Qualification = () => {
                     <i className="fas fa-calendar-days relative  mr-2"></i>
                     2002 - 2014
                   </div>
-                </div>
+                </motion.div>
                 <div>
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
@@ -70,7 +93,12 @@ export const Qualification = () => {
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
                 </div>
-                <div className="justify-self-start">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                  className="justify-self-start"
+                >
                   <h3 className="qualification-card-h3">High School</h3>
                   <span className="qualification-card-span1">
                     (Physical Science)
@@ -80,11 +108,16 @@ export const Qualification = () => {
                     2014 - 2016
                     <i className="fas fa-calendar-days ml-2"></i>
                   </div>
-                </div>
+                </motion.div>
               </div>
               {/* 3 */}
               <div className="qualification-card">
-                <div className="justify-self-end">
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                  className="justify-self-end"
+                >
                   <h3 className="qualification-card-h3 text-right">B. Tech</h3>
                   <span className="qualification-card-span1 text-right">
                     (Computer Science)
@@ -96,7 +129,7 @@ export const Qualification = () => {
                     <i className="fas fa-calendar-days relative  mr-2"></i>
                     2016 - 2020
                   </div>
-                </div>
+                </motion.div>
                 <div>
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
@@ -110,7 +143,12 @@ export const Qualification = () => {
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
                 </div>
-                <div className="justify-self-start">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                  className="justify-self-start"
+                >
                   <h3 className="qualification-card-h3">Masters</h3>
                   <span className="qualification-card-span1">
                     (Web Development)
@@ -122,7 +160,7 @@ export const Qualification = () => {
                     2020 - 2021
                     <i className="fas fa-calendar-days ml-2"></i>
                   </div>
-                </div>
+                </motion.div>
               </div>
               {/* Empty */}
               <div className="qualification-card">
@@ -144,7 +182,12 @@ export const Qualification = () => {
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
                 </div>
-                <div className="justify-self-start">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                  className="justify-self-start"
+                >
                   <h3 className="qualification-card-h3">Graphics Designer</h3>
                   <span className="qualification-card-span">ABC - Company</span>
                   <span className="qualification-card-span1">
@@ -154,11 +197,16 @@ export const Qualification = () => {
                     2016 - 2018
                     <i className="fas fa-calendar-days ml-2"></i>
                   </div>
-                </div>
+                </motion.div>
               </div>
               {/* 2 */}
               <div className="qualification-card">
-                <div className="justify-self-end">
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                  className="justify-self-end"
+                >
                   <h3 className="qualification-card-h3 text-right">
                     UI/UX Designer
                   </h3>
@@ -172,7 +220,7 @@ export const Qualification = () => {
                     <i className="fas fa-calendar-days relative  mr-2"></i>
                     2018 - 2020
                   </div>
-                </div>
+                </motion.div>
                 <div>
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
@@ -186,7 +234,11 @@ export const Qualification = () => {
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>
                 </div>
-                <div className="justify-self-start">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                className="justify-self-start">
                   <h3 className="qualification-card-h3">Web Developer</h3>
                   <span className="qualification-card-span">ABC - Company</span>
                   <span className="qualification-card-span1">
@@ -196,11 +248,15 @@ export const Qualification = () => {
                     2020 - 2021
                     <i className="fas fa-calendar-days ml-2"></i>
                   </div>
-                </div>
+                </motion.div>
               </div>
               {/* 4 */}
               <div className="qualification-card">
-                <div className="justify-self-end">
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeIn", duration: 0.5 }}
+                className="justify-self-end">
                   <h3 className="qualification-card-h3 text-right">
                     Software Developer
                   </h3>
@@ -214,7 +270,7 @@ export const Qualification = () => {
                     <i className="fas fa-calendar-days relative  mr-2"></i>
                     20021 - 2022
                   </div>
-                </div>
+                </motion.div>
                 <div>
                   <span className="qualification-card-span2"></span>
                   <span className="qualification-card-span3"></span>

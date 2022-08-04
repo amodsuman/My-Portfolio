@@ -1,4 +1,6 @@
+import { MotionConfig } from "framer-motion";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
   // Theme
@@ -74,7 +76,7 @@ const Header = () => {
 
   return (
     <>
-      <header
+      <motion.header
         className={`fixed top-0 left-0 z-[99999] w-full backdrop-blur-lg duration-500 ease-in-out ${
           !navbar ? "bg-[#ffffff1a] shadow-3xl" : "shadow-none"
         }`}
@@ -155,7 +157,8 @@ const Header = () => {
             >
               CV<i className="fas fa-download ml-3 text-sm"></i>
             </a>
-            <div className="flex">
+            <motion.div
+            className="flex">
               <i
                 onClick={openHam}
                 className="fas fa-ellipsis-vertical z-[99999999] hidden cursor-pointer border-r-[1px] pr-4 text-xl duration-300 ease-in-out hover:text-hover-color md:block"
@@ -178,12 +181,12 @@ const Header = () => {
                   }`}
                 ></i>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </header>
+      </motion.header>
       <a
-        className={`fixed right-5 bottom-20 z-[99999] flex  h-10 w-10 cursor-pointer items-center justify-center rounded border-2 border-primary-color bg-primary-color text-lg text-white shadow-3xl duration-300 ease-in-out hover:bg-transparent hover:text-primary-color md:bottom-14 sm:bottom-10 xsm:h-8 xsm:w-8 ${
+        className={`fixed right-5 bottom-20 z-[99999] flex  h-10 w-10 cursor-pointer items-center justify-center rounded border-2 border-primary-color bg-primary-color text-lg text-white shadow-3xl duration-300 ease-in-out hover:bg-hover-color md:bottom-14 sm:bottom-10 xsm:h-8 xsm:w-8 ${
           showUp ? "opacity-100" : "opacity-0"
         }`}
         href="#home"

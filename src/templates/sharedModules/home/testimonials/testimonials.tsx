@@ -1,14 +1,10 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-creative";
-
-// import required modules
 import { Autoplay, EffectCreative } from "swiper";
-import Image from "next/image";
 
 export const Testimonials = () => {
   return (
@@ -20,7 +16,11 @@ export const Testimonials = () => {
         {/* Grid */}
         <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_auto] items-center justify-between lg:grid-cols-1 lg:gap-10">
           {/* Col 1 */}
-          <div className="rounded-3xl border-x-[16px] border-bg-color lg:border-x-[0px]">
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
+          className="rounded-3xl border-x-[16px] border-bg-color lg:border-x-[0px]">
             <div className="relative overflow-hidden rounded-3xl border-8 border-border-color bg-bg-color">
               <Swiper
                 autoplay={{
@@ -173,10 +173,14 @@ export const Testimonials = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-          </div>
+          </motion.div>
 
           {/* Col 2 */}
-          <div className="flex w-[450px] justify-self-center xl:w-[410px] lg:w-[250px] sm:w-[200px] xxsm:w-full xxsm:px-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
+          className="flex w-[450px] justify-self-center xl:w-[410px] lg:w-[250px] sm:w-[200px] xxsm:w-full xxsm:px-10">
             <div className="w-full overflow-hidden rounded-full">
               <Image
                 alt="clients"
@@ -187,7 +191,7 @@ export const Testimonials = () => {
                 src="/images/clients.jpg"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
