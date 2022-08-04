@@ -12,7 +12,7 @@ import { Testimonials } from "../sharedModules/home/testimonials/testimonials";
 
 export const LandingPageTemp = () => {
   return (
-    <main className="m-0 box-border bg-bg-color p-0 font-poppins text-secondary-color">
+    <main className="m-0 box-border overflow-x-hidden bg-bg-color p-0 font-poppins text-secondary-color">
       <Header />
       <Banner />
       <About />

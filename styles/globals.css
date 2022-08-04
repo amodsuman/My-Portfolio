@@ -50,7 +50,7 @@ html {
 
 /* Section */
 .section {
-    @apply overflow-hidden relative mx-auto w-full max-w-7xl px-8 sm:px-5 xsm:px-3 pt-32 lg:pt-24 md:pt-20 sm:pt-16;
+    @apply relative mx-auto w-full max-w-7xl px-8 sm:px-5 xsm:px-3 pt-32 lg:pt-24 md:pt-20 sm:pt-16;
 }
 
 
