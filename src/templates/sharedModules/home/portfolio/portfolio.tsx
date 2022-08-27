@@ -88,7 +88,7 @@ export const Portfolio = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/port-img1.jpg"
+                src="/images/portfolio/port-img1.jpg"
               />
             </div>
             {detail1 && (
@@ -136,7 +136,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img1.jpg"
+                          src="/images/portfolio/port-img1.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -146,7 +146,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img2.jpg"
+                          src="/images/portfolio/port-img2.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -156,7 +156,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img3.jpg"
+                          src="/images/portfolio/port-img3.jpg"
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -188,7 +188,7 @@ export const Portfolio = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/port-img2.jpg"
+                src="/images/portfolio/port-img2.jpg"
               />
             </div>
             {detail2 && (
@@ -236,7 +236,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img2.jpg"
+                          src="/images/portfolio/port-img2.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -246,7 +246,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img3.jpg"
+                          src="/images/portfolio/port-img3.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -256,7 +256,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img4.jpg"
+                          src="/images/portfolio/port-img4.jpg"
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -288,7 +288,7 @@ export const Portfolio = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/port-img3.jpg"
+                src="/images/portfolio/port-img3.jpg"
               />
             </div>
             {detail3 && (
@@ -338,7 +338,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img3.jpg"
+                          src="/images/portfolio/port-img3.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -348,7 +348,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img4.jpg"
+                          src="/images/portfolio/port-img4.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -358,7 +358,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img5.jpg"
+                          src="/images/portfolio/port-img5.jpg"
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -390,7 +390,7 @@ export const Portfolio = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/port-img4.jpg"
+                src="/images/portfolio/port-img4.jpg"
               />
             </div>
             {detail4 && (
@@ -438,7 +438,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img4.jpg"
+                          src="/images/portfolio/port-img4.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -448,7 +448,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img5.jpg"
+                          src="/images/portfolio/port-img5.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -458,7 +458,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img6.jpg"
+                          src="/images/portfolio/port-img6.jpg"
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -490,7 +490,7 @@ export const Portfolio = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/port-img5.jpg"
+                src="/images/portfolio/port-img5.jpg"
               />
             </div>
             {detail5 && (
@@ -538,7 +538,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img5.jpg"
+                          src="/images/portfolio/port-img5.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -548,7 +548,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img6.jpg"
+                          src="/images/portfolio/port-img6.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -558,7 +558,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img1.jpg"
+                          src="/images/portfolio/port-img1.jpg"
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -590,7 +590,7 @@ export const Portfolio = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/port-img6.jpg"
+                src="/images/portfolio/port-img6.jpg"
               />
             </div>
             {detail6 && (
@@ -638,7 +638,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img6.jpg"
+                          src="/images/portfolio/port-img6.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -648,7 +648,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img1.jpg"
+                          src="/images/portfolio/port-img1.jpg"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -658,7 +658,7 @@ export const Portfolio = () => {
                           height="70%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/port-img2.jpg"
+                          src="/images/portfolio/port-img2.jpg"
                         />
                       </SwiperSlide>
                     </Swiper>

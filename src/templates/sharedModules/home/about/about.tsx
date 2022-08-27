@@ -29,14 +29,14 @@ export const About = () => {
           transition={{ ease: "easeIn", duration: 0.5 }}
           className="h-auto w-[48%] lg:w-[40%] md:w-full md:max-w-[500px]"
         >
-          <div className="overflow-hidden rounded-xl">
+          <div className="overflow-hidden rounded-xl bg-[#e6e6e6]">
             <Image
               alt="my-image"
               width="100%"
               height="76%"
               layout="responsive"
               objectFit="contain"
-              src="/images/about-img.png"
+              src="/images/my-image.png"
             />
           </div>
         </motion.div>

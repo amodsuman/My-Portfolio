@@ -29,11 +29,12 @@
 
 ::-webkit-scrollbar-thumb {
     width: 6px;
-    background: #6a59d1;
+    border-radius: 100px;
+    background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #3e2cb3;
+    background: var(--hover-color);
 }
 
 .popup-scrollbar::-webkit-scrollbar,

@@ -19,7 +19,7 @@ export const Skills = () => {
                 width="100%"
                 height="100%"
                 objectFit="contain"
-                src="/images/sass.png"
+                src="/images/skills/sass.png"
               />
               {/* <img className="inner-icon" src="../images/sass.png" alt="" /> */}
             </div>
@@ -39,7 +39,7 @@ export const Skills = () => {
                 width="100%"
                 height="100%"
                 objectFit="contain"
-                src="/images/tailwind.png"
+                src="/images/skills/tailwind.png"
               />
               {/* <img className="inner-icon" src="../images/tailwind.png" alt="" /> */}
             </div>
@@ -59,7 +59,7 @@ export const Skills = () => {
                 width="100%"
                 height="100%"
                 objectFit="contain"
-                src="/images/js.png"
+                src="/images/skills/js.png"
               />
               {/* <img className="inner-icon" src="../images/js.png" alt="" /> */}
             </div>
@@ -79,7 +79,7 @@ export const Skills = () => {
                 width="100%"
                 height="100%"
                 objectFit="contain"
-                src="/images/reactjs.png"
+                src="/images/skills/reactjs.png"
               />
               {/* <img className="inner-icon" src="../images/reactjs.png" alt="" /> */}
             </div>
@@ -99,7 +99,7 @@ export const Skills = () => {
                 width="100%"
                 height="100%"
                 objectFit="contain"
-                src="/images/nextjs.png"
+                src="/images/skills/nextjs.png"
               />
               {/* <img className="inner-icon" src="../images/nextjs.png" alt="" /> */}
             </div>
@@ -119,7 +119,7 @@ export const Skills = () => {
                 width="100%"
                 height="100%"
                 objectFit="contain"
-                src="/images/git.png"
+                src="/images/skills/git.png"
               />
               {/* <img className="inner-icon" src="../images/git.png" alt="" /> */}
             </div>

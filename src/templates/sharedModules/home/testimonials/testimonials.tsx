@@ -61,7 +61,7 @@ export const Testimonials = () => {
                           height="100%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/client1.jpg"
+                          src="/images/testimonials/client1.jpg"
                         />
                       </div>
                       <div className="">
@@ -93,7 +93,7 @@ export const Testimonials = () => {
                           height="100%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/client2.jpg"
+                          src="/images/testimonials/client2.jpg"
                         />
                       </div>
                       <div className="">
@@ -125,7 +125,7 @@ export const Testimonials = () => {
                           height="100%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/client3.jpg"
+                          src="/images/testimonials/client3.jpg"
                         />
                       </div>
                       <div className="">
@@ -157,7 +157,7 @@ export const Testimonials = () => {
                           height="100%"
                           layout="responsive"
                           objectFit="cover"
-                          src="/images/client4.jpg"
+                          src="/images/testimonials/client4.jpg"
                         />
                       </div>
                       <div className="">
@@ -188,7 +188,7 @@ export const Testimonials = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
-                src="/images/clients.jpg"
+                src="/images/testimonials/clients.jpg"
               />
             </div>
           </motion.div>
